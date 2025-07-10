@@ -1,0 +1,22 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "canvashacks>=0.0.36",
+    "flask-login>=0.6.3",
+    "matplotlib>=3.10.3",
+    "networkx>=3.4.2",
+    "numpy>=2.2.5",
+    "oauthlib>=3.3.1",
+    "openai>=1.79.0",
+    "opencv-python>=4.11.0.86",
+    "opencv-python-headless>=4.11.0.86",
+    "pillow>=11.2.1",
+    "psycopg2-binary>=2.9.10",
+    "pyqt6>=6.9.0",
+    "requests>=2.32.3",
+    "sqlalchemy>=2.0.41",
+    "twilio>=9.6.4",
+]

@@ -1,0 +1,227 @@
+/* Main application styles for Drive-Manager Pro */
+
+/* Global styles */
+QWidget {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 10pt;
+    color: #333333;
+}
+
+QMainWindow, QDialog {
+    background-color: #F5F6FA;
+}
+
+/* Button styles */
+QPushButton {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
+QPushButton:hover {
+    background-color: #3498DB;
+}
+
+QPushButton:pressed {
+    background-color: #005A9E;
+}
+
+QPushButton:disabled {
+    background-color: #CCCCCC;
+    color: #888888;
+}
+
+/* Primary action buttons */
+QPushButton.primary {
+    background-color: #0078D7;
+}
+
+QPushButton.primary:hover {
+    background-color: #3498DB;
+}
+
+/* File buttons */
+QPushButton.file {
+    background-color: #2ECC71;
+}
+
+QPushButton.file:hover {
+    background-color: #27AE60;
+}
+
+/* Tool buttons */
+QPushButton.tool {
+    background-color: #9B59B6;
+}
+
+QPushButton.tool:hover {
+    background-color: #8E44AD;
+}
+
+/* Cloud buttons */
+QPushButton.cloud {
+    background-color: #E67E22;
+}
+
+QPushButton.cloud:hover {
+    background-color: #D35400;
+}
+
+/* Section widgets */
+QWidget#aiAnalysisWidget, QWidget#cloudStorageWidget, QWidget#toolsWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+QWidget#mindMapWidget {
+    background-color: #2A2D3E;
+    border: 1px solid #1A1C28;
+    border-radius: 5px;
+}
+
+/* Section headers */
+QLabel.section-header {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #333333;
+    padding: 5px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/* Input fields */
+QLineEdit, QTextEdit {
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: white;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #0078D7;
+}
+
+/* Tables */
+QTableWidget {
+    border: 1px solid #DDDDDD;
+    gridline-color: #DDDDDD;
+    background-color: white;
+    selection-background-color: #D0E8FF;
+    selection-color: #333333;
+}
+
+QHeaderView::section {
+    background-color: #F5F6FA;
+    padding: 5px;
+    border: 1px solid #DDDDDD;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    background-color: white;
+}
+
+QTabBar::tab {
+    background-color: #F5F6FA;
+    border: 1px solid #DDDDDD;
+    border-bottom-color: #DDDDDD;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    min-width: 8ex;
+    padding: 6px 12px;
+}
+
+QTabBar::tab:selected {
+    background-color: white;
+    border-bottom-color: white;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #E0E7FF;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background-color: #F5F6FA;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #CCCCCC;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #AAAAAA;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background-color: #F5F6FA;
+    height: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #CCCCCC;
+    min-width: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #AAAAAA;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    border: none;
+    background: none;
+    width: 0px;
+}
+
+/* Tag buttons */
+QPushButton.tag {
+    background-color: #9B59B6;
+    padding: 3px 8px;
+    margin: 2px;
+    border-radius: 12px;
+    max-height: 24px;
+}
+
+QPushButton.tag:hover {
+    background-color: #8E44AD;
+}
+
+/* Animation effects */
+QPushButton {
+    transition: background-color 0.2s;
+}
+
+/* Status messages */
+QLabel.status-success {
+    color: #27AE60;
+}
+
+QLabel.status-warning {
+    color: #F39C12;
+}
+
+QLabel.status-error {
+    color: #E74C3C;
+}
